@@ -6,13 +6,13 @@
 /*   By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 13:09:48 by nahmed-m          #+#    #+#             */
-/*   Updated: 2017/02/11 19:13:03 by nahmed-m         ###   ########.fr       */
+/*   Updated: 2017/02/11 19:44:47 by nahmed-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/libunit.h"
 
-static void		ft_signal(int signal)
+static void	ft_signal(int signal)
 {
 	if (signal == SIGSEGV)
 		exit(11);
@@ -22,7 +22,7 @@ static void		ft_signal(int signal)
 		exit(14);
 }
 
-static int	virtual_exec(int(*f)(void))
+static int	virtual_exec(int (*f)(void))
 {
 	pid_t			father;
 	int				retour;
