@@ -6,21 +6,20 @@
 /*   By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 16:23:31 by nahmed-m          #+#    #+#             */
-/*   Updated: 2017/02/11 16:44:33 by nahmed-m         ###   ########.fr       */
+/*   Updated: 2017/02/11 17:13:19 by nahmed-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include "../../framework/libft/includes/libft.h"
-#include <sys/mman.h>
 
 int		acsii_test(void)
 {
 	char *str;
 
-	strcpy("dwdwd", str);
+	strcpy("dwdwdwdqqwdqwd", str);
 	if (str == NULL)
-		return (1);
+		return (0);
 	else
 		return (-1);
 }
