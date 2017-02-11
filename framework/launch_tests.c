@@ -6,7 +6,7 @@
 /*   By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 13:09:48 by nahmed-m          #+#    #+#             */
-/*   Updated: 2017/02/11 14:58:24 by nahmed-m         ###   ########.fr       */
+/*   Updated: 2017/02/11 15:05:30 by nahmed-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,9 @@
 
 static int	virtual_exec(int(*f)(void))
 {
-
-
+	ft_printf("test");
+	f();
+	ft_printf("test");
 	return (1);
 }
 
@@ -31,9 +32,10 @@ int			launch_tests(t_unit_test **list)
 	is_error = 0;
 	while (tmp)
 	{
-		ft_printf("\t> %s\n", tmp->label_test);
+		ft_printf("\t> %s\t", tmp->label_test);
 		is_error += virtual_exec(tmp->ptr_for_test);
 		tmp = tmp->next;
+		ft_printf("\n");
 	}
 	if (is_error != 0)
 		return (-1);
