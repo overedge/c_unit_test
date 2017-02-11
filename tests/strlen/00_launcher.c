@@ -6,7 +6,7 @@
 /*   By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 12:37:30 by nahmed-m          #+#    #+#             */
-/*   Updated: 2017/02/11 16:54:35 by nahmed-m         ###   ########.fr       */
+/*   Updated: 2017/02/11 18:54:28 by nahmed-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@ int		strlen_launcher(void)
 
 	testlist = NULL;
 	ft_printf("STRLEN :\n");
-	load_test(&testlist, "Basic test", &basic_test);
-	load_test(&testlist, "NULL TEST", &null_test);
-	load_test(&testlist, "NO ACSII", &acsii_test);
-	load_test(&testlist, "ABORT TEST", &abort_test);
+	load_test(&testlist, "Basic test", &basic_test, ACTIVATE);
+	load_test(&testlist, "NULL TEST", &null_test, ACTIVATE);
+	load_test(&testlist, "NO ACSII", &acsii_test, ACTIVATE);
+	load_test(&testlist, "ABORT TEST", &abort_test, ACTIVATE);
 	return (launch_tests(&testlist));
 }

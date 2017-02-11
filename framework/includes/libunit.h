@@ -6,7 +6,7 @@
 /*   By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 13:00:06 by nahmed-m          #+#    #+#             */
-/*   Updated: 2017/02/11 16:10:20 by nahmed-m         ###   ########.fr       */
+/*   Updated: 2017/02/11 18:53:53 by nahmed-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,10 @@
 #include <signal.h>
 #include <sys/wait.h>
 
+
+int		g_piece;
+int		g_piece_error;
+
 typedef struct	s_unit_test
 {
 	int			(*ptr_for_test)(void);
@@ -28,6 +32,9 @@ typedef struct	s_unit_test
 }				t_unit_test;
 
 
-void			load_test(t_unit_test **list, char *label_test, int(*f)(void));
+void			load_test(t_unit_test **list, char *label, int(*f)(void),\
+				int act);
 int				launch_tests(t_unit_test **list);
+void			start_test(void);
+void			finish_test(void);
 #endif

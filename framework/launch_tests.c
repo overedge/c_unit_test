@@ -6,7 +6,7 @@
 /*   By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 13:09:48 by nahmed-m          #+#    #+#             */
-/*   Updated: 2017/02/11 17:18:47 by nahmed-m         ###   ########.fr       */
+/*   Updated: 2017/02/11 18:54:30 by nahmed-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ int			launch_tests(t_unit_test **list)
 		else
 			ft_printf("\033[1;31m[KO]\033[m\n");
 		if (is_error != 0)
-			error++;
+			g_piece_error++;
 	}
 	return (error);
 }

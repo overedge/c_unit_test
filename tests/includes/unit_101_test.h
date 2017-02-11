@@ -6,7 +6,7 @@
 /*   By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 13:29:14 by nahmed-m          #+#    #+#             */
-/*   Updated: 2017/02/11 17:01:42 by nahmed-m         ###   ########.fr       */
+/*   Updated: 2017/02/11 18:19:57 by nahmed-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,11 @@
 
 #include "../../framework/includes/libunit.h"
 
+# define ACTIVATE 1
+# define NO_ACTIVATE 0
 
-# define STRLEN 1
+// SET you launcher
+# define STRLEN ACTIVATE
 /*
 *** DECLARATION OF EACH LAUCHER 00_LIKE
 */
