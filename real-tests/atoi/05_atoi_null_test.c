@@ -1,0 +1,17 @@
+#include <stdlib.h>
+#include "../includes/real_tests.h"
+
+int atoi_null_test(void)
+{
+  int in;
+  int out;
+  char *nbr_test;
+
+  nbr_test = NULL;
+  in = atoi(nbr_test);
+  out = ft_atoi(nbr_test);
+  if (in - out)
+    return (-1);
+  else
+    return (0);
+}
