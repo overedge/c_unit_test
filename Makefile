@@ -41,6 +41,7 @@ re : fclean all
 
 
 test: all
-	@gcc tests/main.c -L. lunit
+	@make -C real-tests/
+	@./real-tests/real_tests
 
 .PHONY : all re clean fclean test

@@ -1,7 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   01_bzero_basic_test.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/02/11 21:07:49 by nahmed-m          #+#    #+#             */
+/*   Updated: 2017/02/11 21:08:07 by nahmed-m         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 #include "../includes/real_tests.h"
 
-int memset_basic_test(void)
+int bzero_basic_test(void)
 {
   int test_len;
   int ret;

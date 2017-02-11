@@ -10,6 +10,6 @@ int atoi_launcher(void)
   load_test(&testlist, "Negative test", &atoi_negative_test, 1);
   load_test(&testlist, "Alpha test", &atoi_alpha_test, 1);
   load_test(&testlist, "Overflow test", &atoi_overflow_test, 1);
-  load_test(&testlist, "Null test", &atoi_null_test, 1);
-  return (launch_test(&testlist));
+  load_test(&testlist, "Null test", &atoi_null_test, 0);
+  return (launch_tests(&testlist));
 }

@@ -7,5 +7,5 @@ int memset_launcher(void)
   testlist = NULL;
   ft_printf("MEMSET :\n");
   load_test(&testlist, "Basic test", &memset_basic_test, 1);
-  return (launch_test(&testlist));
+  return (launch_tests(&testlist));
 }
