@@ -6,7 +6,7 @@
 /*   By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 13:09:53 by nahmed-m          #+#    #+#             */
-/*   Updated: 2017/02/11 18:54:29 by nahmed-m         ###   ########.fr       */
+/*   Updated: 2017/02/11 19:12:00 by nahmed-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,11 @@ void		start_test()
 void		finish_test()
 {
 	if (g_piece_error != 0)
-		ft_printf("\n \033[1;31m❌\t %d TESTS REUSSI SUR %d \033[m\n", g_piece - g_piece_error, g_piece);
+		ft_printf("\n \033[1;31m❌\t %d TESTS REUSSI SUR %d \033[m\n",\
+				g_piece - g_piece_error, g_piece);
 	else
-		ft_printf("\n \033[1;32m✅ \t%d/%d TESTS REUSSI\033[m\n", g_piece, g_piece);
+		ft_printf("\n \033[1;32m✅ \t%d/%d TESTS REUSSI\033[m\n", g_piece,\
+				g_piece);
+	g_piece_error = 0;
+	g_piece = 0;
 }

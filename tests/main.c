@@ -6,7 +6,7 @@
 /*   By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 13:28:18 by nahmed-m          #+#    #+#             */
-/*   Updated: 2017/02/11 18:54:28 by nahmed-m         ###   ########.fr       */
+/*   Updated: 2017/02/11 19:12:00 by nahmed-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,15 @@
 
 int		main(int argc, char **argv)
 {
+	int		error;
+
+	error = 0;
 	start_test();
 	if (STRLEN)
 		strlen_launcher();
+	error = g_piece_error;
 	finish_test();
-	if (g_piece_error != 0)
+	if (error != 0)
 		return (-1);
 	return (0);
 }
