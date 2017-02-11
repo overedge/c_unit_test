@@ -6,7 +6,7 @@
 /*   By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 13:09:48 by nahmed-m          #+#    #+#             */
-/*   Updated: 2017/02/11 15:05:30 by nahmed-m         ###   ########.fr       */
+/*   Updated: 2017/02/11 15:17:51 by nahmed-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,8 @@
 
 static int	virtual_exec(int(*f)(void))
 {
-	ft_printf("test");
-	f();
-	ft_printf("test");
-	return (1);
+	f(); // LANCEMENT DE LA FONCTION
+	return (1); // RENVOI DU CODE DE RETOUR SELON WAIT
 }
 
 int			launch_tests(t_unit_test **list)
