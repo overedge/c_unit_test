@@ -6,7 +6,7 @@
 /*   By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 13:00:06 by nahmed-m          #+#    #+#             */
-/*   Updated: 2017/02/11 14:33:19 by nahmed-m         ###   ########.fr       */
+/*   Updated: 2017/02/11 16:10:20 by nahmed-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,10 @@
 
 #include "../libft/includes/libft.h"
 #include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <signal.h>
+#include <sys/wait.h>
 
 typedef struct	s_unit_test
 {

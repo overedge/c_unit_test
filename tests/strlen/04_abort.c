@@ -1,23 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   04_abort.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/11 13:28:18 by nahmed-m          #+#    #+#             */
-/*   Updated: 2017/02/11 16:54:37 by nahmed-m         ###   ########.fr       */
+/*   Created: 2017/02/11 16:48:11 by nahmed-m          #+#    #+#             */
+/*   Updated: 2017/02/11 16:54:33 by nahmed-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/unit_101_test.h"
+#include <string.h>
 
-
-int		main(int argc, char **argv)
+int		abort_test(void)
 {
-	ft_printf("*********************************************\n");
-	ft_printf("***************42 TEST FOR RUSH**************\n");
-	ft_printf("*********************************************\n");
-	if (STRLEN)
-		strlen_launcher();
+	char str[2];
+
+	strcpy(str, "dwadwqdwqdqwdwq\0");
+	return (0);
 }

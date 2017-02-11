@@ -1,23 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   03_no_acsii.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/11 13:28:18 by nahmed-m          #+#    #+#             */
-/*   Updated: 2017/02/11 16:54:37 by nahmed-m         ###   ########.fr       */
+/*   Created: 2017/02/11 16:23:31 by nahmed-m          #+#    #+#             */
+/*   Updated: 2017/02/11 16:44:33 by nahmed-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/unit_101_test.h"
+#include <string.h>
+#include "../../framework/libft/includes/libft.h"
+#include <sys/mman.h>
 
-
-int		main(int argc, char **argv)
+int		acsii_test(void)
 {
-	ft_printf("*********************************************\n");
-	ft_printf("***************42 TEST FOR RUSH**************\n");
-	ft_printf("*********************************************\n");
-	if (STRLEN)
-		strlen_launcher();
+	char *str;
+
+	strcpy("dwdwd", str);
+	if (str == NULL)
+		return (1);
+	else
+		return (-1);
 }
