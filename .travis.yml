@@ -6,4 +6,4 @@ language: c
 
 install: make
 
-script: make test
+script: make ; make -C ./real-tests/ test ; make -C ./tests/ test
