@@ -6,7 +6,7 @@
 #    By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/02/12 14:44:55 by nahmed-m          #+#    #+#              #
-#    Updated: 2017/02/12 15:01:30 by nahmed-m         ###   ########.fr        #
+#    Updated: 2017/02/12 15:23:12 by nahmed-m         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,6 +38,6 @@ re : fclean all
 
 
 test: all
-	@./real_tests
+	@./basic_run
 
 .PHONY : all re clean fclean test
