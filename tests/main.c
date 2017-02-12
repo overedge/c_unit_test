@@ -6,14 +6,14 @@
 /*   By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 13:28:18 by nahmed-m          #+#    #+#             */
-/*   Updated: 2017/02/12 14:59:49 by nahmed-m         ###   ########.fr       */
+/*   Updated: 2017/02/12 16:58:33 by nahmed-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/unit_101_test.h"
 #include "../framework/includes/libunit.h"
 
-int		main()
+int		main(void)
 {
 	int		error;
 
