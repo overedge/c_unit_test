@@ -6,7 +6,7 @@
 #    By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/02/12 14:44:59 by nahmed-m          #+#    #+#              #
-#    Updated: 2017/02/12 15:14:12 by nahmed-m         ###   ########.fr        #
+#    Updated: 2017/02/12 15:20:11 by nahmed-m         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,7 +52,7 @@ fclean : clean
 re : fclean all
 
 
-test: all
+test: test_fclean all
 	@make -C real-tests/
 	-@./real-tests/real_tests
 	@make -C tests/
