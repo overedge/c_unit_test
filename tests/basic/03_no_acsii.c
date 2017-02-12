@@ -6,7 +6,7 @@
 /*   By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 16:23:31 by nahmed-m          #+#    #+#             */
-/*   Updated: 2017/02/12 15:03:31 by nahmed-m         ###   ########.fr       */
+/*   Updated: 2017/02/12 17:22:24 by nahmed-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ int		acsii_test(void)
 {
 	char *str;
 
-	str = NULL;
-	strcpy("dwdwdwdqqwdqwd", str);
+	str = "SEX !";
+	ft_strcpy("dwdwdwdqqwdqwd", str);
 	if (str == NULL)
 		return (0);
 	else
