@@ -6,7 +6,7 @@
 /*   By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 12:37:30 by nahmed-m          #+#    #+#             */
-/*   Updated: 2017/02/11 19:15:11 by nahmed-m         ###   ########.fr       */
+/*   Updated: 2017/02/12 15:05:56 by nahmed-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int		strlen_launcher(void)
 	t_unit_test *testlist;
 
 	testlist = NULL;
-	ft_printf("STRLEN :\n");
+	ft_printf("TESTS FOR TESTS :\n");
 	load_test(&testlist, "Basic test", &basic_test, ACTIVATE);
 	load_test(&testlist, "NULL TEST", &null_test, ACTIVATE);
 	load_test(&testlist, "NO ACSII", &acsii_test, ACTIVATE);

@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2017/02/12 14:44:59 by nahmed-m          #+#    #+#              #
+#    Updated: 2017/02/12 15:14:12 by nahmed-m         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 SRC_NAME = ./framework/load_test.c ./framework/launch_tests.c
 
 NAME = framework/libft.a
@@ -42,6 +54,16 @@ re : fclean all
 
 test: all
 	@make -C real-tests/
-	@./real-tests/real_tests
+	-@./real-tests/real_tests
+	@make -C tests/
+	-@./tests/basic_run
+
+test_clean: clean
+	@make clean -C real-tests/
+	@make clean -C tests/
+
+test_fclean: fclean
+	@make fclean -C real-tests/
+	@make fclean -C tests/
 
 .PHONY : all re clean fclean test
