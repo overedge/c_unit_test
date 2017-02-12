@@ -6,7 +6,7 @@
 /*   By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 21:19:34 by nahmed-m          #+#    #+#             */
-/*   Updated: 2017/02/12 16:36:31 by nahmed-m         ###   ########.fr       */
+/*   Updated: 2017/02/12 16:40:55 by nahmed-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,6 @@ int strcmp_launcher(void)
   load_test(&testlist, "Basic test", &strcmp_basic_test, 1);
   load_test(&testlist, "Lenght test", &strcmp_lenght_test, 1);
   load_test(&testlist, "Harder test", &strcmp_harder_test, 1);
-  load_test(&testlist, "Null test", &strcmp_null_test, 1);
+  load_test(&testlist, "Null test", &strcmp_null_test, 0);
   return (launch_tests(&testlist));
 }
