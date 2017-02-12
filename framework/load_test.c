@@ -6,13 +6,13 @@
 /*   By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/11 13:09:53 by nahmed-m          #+#    #+#             */
-/*   Updated: 2017/02/11 19:12:00 by nahmed-m         ###   ########.fr       */
+/*   Updated: 2017/02/12 16:48:25 by nahmed-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libunit.h"
 
-void		load_test(t_unit_test **list, char *label, int(*f)(void), int act)
+void		load_test(t_unit_test **list, char *label, int (*f)(void), int act)
 {
 	t_unit_test *tmp;
 	t_unit_test *new;
@@ -37,14 +37,14 @@ void		load_test(t_unit_test **list, char *label, int(*f)(void), int act)
 	}
 }
 
-void		start_test()
+void		start_test(void)
 {
 	ft_printf("*********************************************\n");
 	ft_printf("************ - 42 TEST FOR RUSH - ***********\n");
 	ft_printf("*********************************************\n");
 }
 
-void		finish_test()
+void		finish_test(void)
 {
 	if (g_piece_error != 0)
 		ft_printf("\n \033[1;31m❌\t %d TESTS REUSSI SUR %d \033[m\n",\
