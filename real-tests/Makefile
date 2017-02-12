@@ -5,7 +5,12 @@ SRC_NAME = ./main.c ./atoi/00_atoi_launcher.c \
 		   ./bzero/01_bzero_basic_test.c ./memset/00_memset_launcher.c \
 		   ./memset/01_memset_basic_test.c ./strcmp/00_strcmp_launcher.c \
 		   ./strcmp/01_strcmp_basic_test.c ./strcmp/02_strcmp_lenght_test.c \
-		   ./strcmp/03_strcmp_harder_test.c ./strcmp/04_strcmp_null_test.c
+		   ./strcmp/03_strcmp_harder_test.c ./strcmp/04_strcmp_null_test.c \
+		   ./strdup/00_strdup_launcher.c ./strdup/01_strdup_basic_test.c \
+		   ./strstr/00_strstr_launcher.c ./strstr/01_strstr_basic_test.c \
+		   ./strstr/02_strstr_nomatch_test.c ./strchr/00_strchr_launcher.c \
+		   ./strchr/01_strchr_basic_test.c ./strchr/02_strchr_multi_test.c \
+		   ./strchr/03_strchr_nomatch_test.c
 
 OBJ_NAME  = ./main.o 00_atoi_launcher.o \
 		   01_atoi_basic_test.o 02_atoi_negative_test.o \
@@ -15,7 +20,12 @@ OBJ_NAME  = ./main.o 00_atoi_launcher.o \
 		   01_memset_basic_test.o 00_strcmp_launcher.o \
 		   01_strcmp_basic_test.o 02_strcmp_lenght_test.o \
 		   03_strcmp_harder_test.o 04_strcmp_null_test.o \
-		
+		   00_strdup_launcher.o 01_strdup_basic_test.o \
+		   00_strstr_launcher.o 01_strstr_basic_test.o \
+		   02_strstr_nomatch_test.o 00_strchr_launcher.o \
+		   01_strchr_basic_test.o 02_strchr_multi_test.o \
+		   03_strchr_nomatch_test.o
+
 
 NAME = real_tests
 
