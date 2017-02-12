@@ -6,7 +6,7 @@
 #    By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/02/12 14:44:55 by nahmed-m          #+#    #+#              #
-#    Updated: 2017/02/12 15:01:30 by nahmed-m         ###   ########.fr        #
+#    Updated: 2017/02/12 15:54:17 by nahmed-m         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,8 +22,8 @@ NAME = basic_run
 all : $(NAME)
 
 $(NAME) :
-	@gcc -c -Wall -Werror -Wextra $(SRC_NAME) -I ./includes/
-	@gcc -o $(NAME) -Wall -Werror -Wextra $(OBJ_NAME) -L.. -lunit
+	@clang -c -Wall -Werror -Wextra $(SRC_NAME) -I ./includes/
+	@clang -o $(NAME) -Wall -Werror -Wextra $(OBJ_NAME) -L.. -lunit
 	@echo "\033[1;34m --REAL-FAKE-TEST-- :\033[m \033[1;32m DONE !\033[m"
 
 clean :
@@ -38,6 +38,6 @@ re : fclean all
 
 
 test: all
-	@./real_tests
+	@./basic_run
 
 .PHONY : all re clean fclean test

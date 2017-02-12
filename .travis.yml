@@ -1,0 +1,9 @@
+os: osx
+
+osx_image: xcode8.2
+
+language: c
+
+install: make
+
+script: make && make -C ./real-tests/ test && make -C ./tests/ test

@@ -32,8 +32,8 @@ NAME = real_tests
 all : $(NAME)
 
 $(NAME) :
-	@gcc -c -Wall -Werror -Wextra $(SRC_NAME) -I ./includes/
-	@gcc -o $(NAME) -Wall -Werror -Wextra $(OBJ_NAME) -L.. -lunit
+	@clang -c -Wall -Werror -Wextra $(SRC_NAME) -I ./includes/
+	@clang -o $(NAME) -Wall -Werror -Wextra $(OBJ_NAME) -L.. -lunit
 	@echo "\033[1;34m --REAL-TEST-- :\033[m \033[1;32m DONE !\033[m"
 
 clean :

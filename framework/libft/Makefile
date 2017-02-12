@@ -6,7 +6,7 @@
 #    By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/24 12:13:50 by nahmed-m          #+#    #+#              #
-#    Updated: 2017/02/11 13:12:55 by nahmed-m         ###   ########.fr        #
+#    Updated: 2017/02/12 15:53:52 by nahmed-m         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ OBJ_NAME = $(SRC_NAME:.c=.o)
 NAME = libft.a
 
 $(NAME) :
-	@gcc -Werror -Wextra -Wall $(SRC_NAME) -c -I ./includes/
+	@clang -Werror -Wextra -Wall $(SRC_NAME) -c -I ./includes/
 	@ar rc $(NAME) $(OBJ_NAME)
 	@ranlib $(NAME)
 	@echo "\033[1;34m ----LIBFT----- :\033[m \033[1;32m DONE !\033[m"
@@ -45,6 +45,7 @@ fclean : clean
 	@rm -rf $(NAME)
 	@echo "\033[1;34m ----LIBFT----- :\033[m \033[1;32m DELETE libft.a !\033[m"
 	@make clean -C ft_printf
+
 re : fclean all
 
 .PHONY: all clean fclean re $(NAME)
