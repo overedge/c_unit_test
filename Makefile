@@ -6,7 +6,7 @@
 #    By: nahmed-m <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/02/12 14:44:59 by nahmed-m          #+#    #+#              #
-#    Updated: 2017/02/12 15:20:11 by nahmed-m         ###   ########.fr        #
+#    Updated: 2017/02/12 15:52:00 by nahmed-m         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ all : $(NAME)
 $(NAME) :
 	@make fclean -C framework/libft/ && make -C framework/libft/
 	@cp framework/libft/libft.a framework/
-	@gcc -c -Wall -Werror -Wextra $(SRC_NAME) -I ./framework/includes/
+	@clang -c -Wall -Werror -Wextra $(SRC_NAME) -I ./framework/includes/
 	@ar rc $(NAME) $(OBJ_NAME)
 	@ranlib $(NAME)
 	@mv framework/libft.a libunit.a
@@ -30,7 +30,7 @@ $(NAME) :
 debug :
 	@make fclean -C framework/libft/ && make -C framework/libft/
 	@cp framework/libft/libft.a framework/
-	@gcc -c $(SRC_NAME) -I ./framework/includes/
+	@clang -c $(SRC_NAME) -I ./framework/includes/
 	@ar rc $(NAME) $(OBJ_NAME)
 	@ranlib $(NAME)
 	@mv framework/libft.a libunit.a

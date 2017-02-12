@@ -19,7 +19,7 @@ OBJ_NAME = $(SRC_NAME:.c=.o)
 
 
 all :
-	@gcc -Werror -Wextra -Wall $(SRC_NAME) -c
+	@clang -Werror -Wextra -Wall $(SRC_NAME) -c
 	@ar rc $(NAME) $(OBJ_NAME)
 	@ranlib $(NAME)
 	@echo "\033[1;34m ----PRINTF---- :\033[m \033[1;32m DONE !\033[m"
